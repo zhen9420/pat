@@ -1,0 +1,3 @@
+﻿  003.cpp
+003.obj : error LNK2005: main 已经在 002.obj 中定义
+C:\Repository\pat\PAT\x64\Debug\PAT.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
