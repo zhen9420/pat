@@ -9,7 +9,7 @@ int main() {
 	for (int i = a; i <= b; i++) {
 		cout <<resetiosflags(ios::right)<< setfill(' ')<<setw(5)<<i;
 		sum += i;
-		if (i - fst != 0 && (i - fst) % 4 == 0) {
+		if (i - fst != 0 && (i - fst) % 4 == 0&&b-a>4) {
 			fst = i + 1;
 			cout << endl;
 		}
