@@ -1,0 +1,3 @@
+﻿  FileName.cpp
+C:\Repository\pat\015\FileName.cpp(8,8): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  015.vcxproj -> C:\Repository\pat\015\x64\Debug\015.exe

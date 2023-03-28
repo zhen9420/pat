@@ -4,7 +4,7 @@
 using namespace std;
 typedef long l;
 l a[101],b[101];
-l A = 0, B = 0;
+l A , B ;
 int t = 0;
 string s[101];
 void convert1(int ordinal, int position, bool sgn) ;
@@ -71,7 +71,7 @@ void add(l A,l B,l a,l b) {
 		if (B == b) {
 			A += a;
 		}
-		if (B % b == 0) {
+		else if (B % b == 0) {
 			int c = B % b;
 			A += c * a;
 		}
