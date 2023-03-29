@@ -3,13 +3,24 @@
 #include<cmath>
 using namespace std;
 typedef long l;
+typedef long long ll;
 l a[101],b[101];
-l A , B ;
+ll A , B ;
 int t = 0;
 string s[101];
 void convert1(int ordinal, int position, bool sgn) ;
 void convert2(int ordinal, int position,int length) ;
-void add(l A, l B,l a,l b);
+void add(l a,l b);
+ll gcd(ll a, ll b) {
+	int c = 0;
+	while (b != 0) {
+		c = a % b;
+		a = b;
+		b = c;
+	}
+	return a;
+}
+
 int main() {
 	int x;
 	cin >> x;
@@ -40,9 +51,19 @@ int main() {
 	}
 	for (int i = 0; i < x; i++) {
 
-		add(A, B, a[i], b[i]);
+		add(a[i], b[i]);
 	}
-	cout << A << '/' << B;
+	if (A % B == 0) {
+		cout << A / B;
+	}
+	else if(abs(A/B)<1)
+	{
+		cout << A / abs(gcd(A, B)) << '/' << B / abs(gcd(A, B));
+	}
+	else {
+		cout << A / B << ' ' << A % B/abs(gcd(A%B,B)) << '/' << B/abs(gcd(A%B,B));
+	}
+	
 }
 void convert1(int ordinal, int position, bool sgn) {
 	if (sgn) {
@@ -62,7 +83,7 @@ void convert2(int ordinal, int position,int length) {
 	}
 	t++;
 }
-void add(l A,l B,l a,l b) {
+void add(l a,l b) {
 	if (A == 0 && B == 0) {
 		A += a;
 		B += b;
@@ -72,17 +93,20 @@ void add(l A,l B,l a,l b) {
 			A += a;
 		}
 		else if (B % b == 0) {
-			int c = B % b;
+			int c = B / b;
 			A += c * a;
 		}
 		else if (b % B == 0) {
-			int c = b % B;
+			int c = b / B;
 			A = A * c + a;
 			B = b;
 		}
 		else {
-			B = B * b;
 			A = A * b + a * B;
+			B = B * b;
 		}
+		int C = A;
+		A = A / abs(gcd(A, B));
+		B = B / abs(gcd(C, B));
 	}
 }

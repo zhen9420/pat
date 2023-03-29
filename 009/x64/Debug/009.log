@@ -1,7 +1,11 @@
 ﻿  FileName.cpp
-C:\Repository\pat\009\FileName.cpp(27,34): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-C:\Repository\pat\009\FileName.cpp(36,33): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-C:\Repository\pat\009\FileName.cpp(51,34): warning C4244: “-=”: 从“double”转换到“l”，可能丢失数据
-C:\Repository\pat\009\FileName.cpp(56,34): warning C4244: “+=”: 从“double”转换到“l”，可能丢失数据
-C:\Repository\pat\009\FileName.cpp(62,33): warning C4244: “+=”: 从“double”转换到“l”，可能丢失数据
+C:\Repository\pat\009\FileName.cpp(17,9): warning C4244: “=”: 从“ll”转换到“int”，可能丢失数据
+C:\Repository\pat\009\FileName.cpp(37,34): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Repository\pat\009\FileName.cpp(46,33): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Repository\pat\009\FileName.cpp(71,34): warning C4244: “-=”: 从“double”转换到“l”，可能丢失数据
+C:\Repository\pat\009\FileName.cpp(76,34): warning C4244: “+=”: 从“double”转换到“l”，可能丢失数据
+C:\Repository\pat\009\FileName.cpp(82,33): warning C4244: “+=”: 从“double”转换到“l”，可能丢失数据
+C:\Repository\pat\009\FileName.cpp(96,10): warning C4244: “初始化”: 从“ll”转换到“int”，可能丢失数据
+C:\Repository\pat\009\FileName.cpp(100,10): warning C4244: “初始化”: 从“ll”转换到“int”，可能丢失数据
+C:\Repository\pat\009\FileName.cpp(108,9): warning C4244: “初始化”: 从“ll”转换到“int”，可能丢失数据
   009.vcxproj -> C:\Repository\pat\009\x64\Debug\009.exe
