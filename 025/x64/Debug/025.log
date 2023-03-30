@@ -1,0 +1,5 @@
+﻿  FileName.cpp
+C:\Repository\pat\025\FileName.cpp(33,34): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Repository\pat\025\FileName.cpp(34,35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Repository\pat\025\FileName.cpp(45,23): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+  025.vcxproj -> C:\Repository\pat\025\x64\Debug\025.exe
