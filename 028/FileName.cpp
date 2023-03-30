@@ -1,28 +1,30 @@
 #include<iostream>
 #include<cmath>
 using namespace std;
-bool prime[2147483647] ;
-void ai(){
-	memset(prime, true, sizeof(prime));
-	prime[1] = false;
-	long n = sqrt(2147483647);
-	for (long i = 2; i <= n; i++) {
-		if (prime[i]) {
-			for (long j = 2; j <= 2147483647 / i; j++) {
-				prime[i * j] = false;
-			}
-		}
-	}
-}
+bool isprime(int m);
 int main(void) {
 	int n;
 	cin >> n;
+	int x[10];
 	for (int i = 0; i < n; i++) {
-		int x;
-		cin >> x;
-		if (prime[x]) cout << "Yes";
+		std::cin >> x[i];
+	}
+	for (int i = 0; i < n; i++) {
+		if (isprime(x[i])==1) cout << "Yes";
 		else cout << "No";
 		if (i < n - 1) cout << endl;
-
 	}
+}
+bool isprime(int m) {
+	int t = sqrt(m);
+	bool ret = true;
+	if (m >= 2) {
+		for (int i = 2; i <= t; i++) {
+			if (m % i == 0) {
+				ret = false;
+			}
+		}
+	}
+	else ret = false;
+	return ret;
 }
