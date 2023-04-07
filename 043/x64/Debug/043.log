@@ -1,0 +1,3 @@
+﻿  043.cpp
+C:\Repository\pat\043\043.cpp(53,39): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  043.vcxproj -> C:\Repository\pat\L1\x64\Debug\043.exe
